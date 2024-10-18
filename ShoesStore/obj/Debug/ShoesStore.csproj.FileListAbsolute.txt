@@ -1,0 +1,9 @@
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\bin\Debug\ShoesStore.exe.config
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\bin\Debug\ShoesStore.exe
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\bin\Debug\ShoesStore.pdb
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.csproj.AssemblyReference.cache
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.Properties.Resources.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.csproj.GenerateResource.cache
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.csproj.CoreCompileInputs.cache
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.exe
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.pdb
