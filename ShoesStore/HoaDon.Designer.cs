@@ -74,9 +74,9 @@
             this.btn_Tim_Kiem_HoaDon.BackColor = System.Drawing.Color.MediumAquamarine;
             this.btn_Tim_Kiem_HoaDon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_Tim_Kiem_HoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Tim_Kiem_HoaDon.Location = new System.Drawing.Point(1087, 142);
+            this.btn_Tim_Kiem_HoaDon.Location = new System.Drawing.Point(1084, 130);
             this.btn_Tim_Kiem_HoaDon.Name = "btn_Tim_Kiem_HoaDon";
-            this.btn_Tim_Kiem_HoaDon.Size = new System.Drawing.Size(95, 48);
+            this.btn_Tim_Kiem_HoaDon.Size = new System.Drawing.Size(113, 67);
             this.btn_Tim_Kiem_HoaDon.TabIndex = 22;
             this.btn_Tim_Kiem_HoaDon.Text = "Tìm";
             this.btn_Tim_Kiem_HoaDon.UseVisualStyleBackColor = false;
@@ -100,13 +100,14 @@
             // 
             // date_Den
             // 
-            this.date_Den.Location = new System.Drawing.Point(705, 138);
+            this.date_Den.Location = new System.Drawing.Point(702, 142);
             this.date_Den.Name = "date_Den";
             this.date_Den.Size = new System.Drawing.Size(284, 26);
             this.date_Den.TabIndex = 25;
             // 
             // dgv_Hoa_Don
             // 
+            this.dgv_Hoa_Don.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Hoa_Don.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_Hoa_Don.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Hoa_Don.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -118,11 +119,11 @@
             this.phuongthucthanhtoan,
             this.Trangthaithanhtoan});
             this.dgv_Hoa_Don.GridColor = System.Drawing.Color.White;
-            this.dgv_Hoa_Don.Location = new System.Drawing.Point(116, 366);
+            this.dgv_Hoa_Don.Location = new System.Drawing.Point(126, 280);
             this.dgv_Hoa_Don.Name = "dgv_Hoa_Don";
             this.dgv_Hoa_Don.RowHeadersWidth = 62;
             this.dgv_Hoa_Don.RowTemplate.Height = 28;
-            this.dgv_Hoa_Don.Size = new System.Drawing.Size(1093, 288);
+            this.dgv_Hoa_Don.Size = new System.Drawing.Size(1101, 384);
             this.dgv_Hoa_Don.TabIndex = 26;
             // 
             // MaHoaDon
@@ -130,49 +131,42 @@
             this.MaHoaDon.HeaderText = "Mã hoá đơn";
             this.MaHoaDon.MinimumWidth = 8;
             this.MaHoaDon.Name = "MaHoaDon";
-            this.MaHoaDon.Width = 150;
             // 
             // Makhachhang
             // 
             this.Makhachhang.HeaderText = "Mã khách hàng";
             this.Makhachhang.MinimumWidth = 8;
             this.Makhachhang.Name = "Makhachhang";
-            this.Makhachhang.Width = 150;
             // 
             // Manhanvien
             // 
             this.Manhanvien.HeaderText = "Mã nhân viên";
             this.Manhanvien.MinimumWidth = 8;
             this.Manhanvien.Name = "Manhanvien";
-            this.Manhanvien.Width = 150;
             // 
             // Ngaymuahang
             // 
             this.Ngaymuahang.HeaderText = "Ngày mua hàng";
             this.Ngaymuahang.MinimumWidth = 8;
             this.Ngaymuahang.Name = "Ngaymuahang";
-            this.Ngaymuahang.Width = 150;
             // 
             // Sotienthanhtoan
             // 
             this.Sotienthanhtoan.HeaderText = "Số tiền thanh toán";
             this.Sotienthanhtoan.MinimumWidth = 8;
             this.Sotienthanhtoan.Name = "Sotienthanhtoan";
-            this.Sotienthanhtoan.Width = 150;
             // 
             // phuongthucthanhtoan
             // 
             this.phuongthucthanhtoan.HeaderText = "Phương thức thanh toán";
             this.phuongthucthanhtoan.MinimumWidth = 8;
             this.phuongthucthanhtoan.Name = "phuongthucthanhtoan";
-            this.phuongthucthanhtoan.Width = 150;
             // 
             // Trangthaithanhtoan
             // 
             this.Trangthaithanhtoan.HeaderText = "Trạng thái thanh toán";
             this.Trangthaithanhtoan.MinimumWidth = 8;
             this.Trangthaithanhtoan.Name = "Trangthaithanhtoan";
-            this.Trangthaithanhtoan.Width = 150;
             // 
             // HoaDon
             // 
@@ -187,8 +181,10 @@
             this.Controls.Add(this.btn_Tim_Kiem_HoaDon);
             this.Controls.Add(this.lab5);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HoaDon";
             this.Text = "HoaDon";
+            this.Load += new System.EventHandler(this.HoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Hoa_Don)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

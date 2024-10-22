@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_PhieuNhapKho = new System.Windows.Forms.DataGridView();
             this.MaGiayTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +58,14 @@
             // dgv_PhieuNhapKho
             // 
             this.dgv_PhieuNhapKho.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_PhieuNhapKho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_PhieuNhapKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_PhieuNhapKho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaGiayTT,
@@ -64,7 +74,15 @@
             this.Giatungsanpham,
             this.ThueVAT,
             this.thanhtiensanpham});
-            this.dgv_PhieuNhapKho.GridColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_PhieuNhapKho.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_PhieuNhapKho.GridColor = System.Drawing.Color.Black;
             this.dgv_PhieuNhapKho.Location = new System.Drawing.Point(90, 132);
             this.dgv_PhieuNhapKho.Name = "dgv_PhieuNhapKho";
             this.dgv_PhieuNhapKho.RowHeadersWidth = 62;
@@ -122,6 +140,7 @@
             this.ClientSize = new System.Drawing.Size(1161, 669);
             this.Controls.Add(this.dgv_PhieuNhapKho);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChiTietPhieuNhapKho";
             this.Text = "ChiTietPhieuNhapKho";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PhieuNhapKho)).EndInit();

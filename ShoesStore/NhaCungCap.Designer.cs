@@ -30,16 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_NCC = new System.Windows.Forms.DataGridView();
-            this.txt_Ma_ncc = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btn_Tim_NCC = new System.Windows.Forms.Button();
             this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThaiHopTac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txt_Ma_ncc = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btn_Tim_NCC = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_NCC)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +50,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(250, 20);
+            this.label1.Location = new System.Drawing.Point(330, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(344, 43);
             this.label1.TabIndex = 19;
@@ -68,41 +70,12 @@
             this.SDT,
             this.TrangThaiHopTac});
             this.dgv_NCC.GridColor = System.Drawing.Color.White;
-            this.dgv_NCC.Location = new System.Drawing.Point(12, 274);
+            this.dgv_NCC.Location = new System.Drawing.Point(22, 256);
             this.dgv_NCC.Name = "dgv_NCC";
             this.dgv_NCC.RowHeadersWidth = 62;
             this.dgv_NCC.RowTemplate.Height = 28;
-            this.dgv_NCC.Size = new System.Drawing.Size(970, 198);
+            this.dgv_NCC.Size = new System.Drawing.Size(970, 356);
             this.dgv_NCC.TabIndex = 25;
-            // 
-            // txt_Ma_ncc
-            // 
-            this.txt_Ma_ncc.Location = new System.Drawing.Point(551, 133);
-            this.txt_Ma_ncc.Name = "txt_Ma_ncc";
-            this.txt_Ma_ncc.Size = new System.Drawing.Size(181, 26);
-            this.txt_Ma_ncc.TabIndex = 24;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(536, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(215, 22);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Nhập mã nhà cung cấp";
-            // 
-            // btn_Tim_NCC
-            // 
-            this.btn_Tim_NCC.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btn_Tim_NCC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_Tim_NCC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Tim_NCC.Location = new System.Drawing.Point(777, 111);
-            this.btn_Tim_NCC.Name = "btn_Tim_NCC";
-            this.btn_Tim_NCC.Size = new System.Drawing.Size(95, 48);
-            this.btn_Tim_NCC.TabIndex = 26;
-            this.btn_Tim_NCC.Text = "Tìm";
-            this.btn_Tim_NCC.UseVisualStyleBackColor = false;
             // 
             // MaNCC
             // 
@@ -146,22 +119,62 @@
             this.TrangThaiHopTac.Name = "TrangThaiHopTac";
             this.TrangThaiHopTac.Width = 150;
             // 
+            // txt_Ma_ncc
+            // 
+            this.txt_Ma_ncc.Location = new System.Drawing.Point(654, 160);
+            this.txt_Ma_ncc.Name = "txt_Ma_ncc";
+            this.txt_Ma_ncc.Size = new System.Drawing.Size(181, 26);
+            this.txt_Ma_ncc.TabIndex = 24;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(620, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(215, 22);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Nhập mã nhà cung cấp";
+            // 
+            // btn_Tim_NCC
+            // 
+            this.btn_Tim_NCC.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btn_Tim_NCC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_Tim_NCC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Tim_NCC.Location = new System.Drawing.Point(883, 125);
+            this.btn_Tim_NCC.Name = "btn_Tim_NCC";
+            this.btn_Tim_NCC.Size = new System.Drawing.Size(95, 48);
+            this.btn_Tim_NCC.TabIndex = 26;
+            this.btn_Tim_NCC.Text = "Tìm";
+            this.btn_Tim_NCC.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dgv_NCC);
+            this.panel1.Controls.Add(this.btn_Tim_NCC);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txt_Ma_ncc);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1031, 627);
+            this.panel1.TabIndex = 27;
+            // 
             // NhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(994, 624);
-            this.Controls.Add(this.btn_Tim_NCC);
-            this.Controls.Add(this.dgv_NCC);
-            this.Controls.Add(this.txt_Ma_ncc);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1027, 624);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NhaCungCap";
             this.Text = "NhaCungCap";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_NCC)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -178,5 +191,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThaiHopTac;
         private System.Windows.Forms.Button btn_Tim_NCC;
+        private System.Windows.Forms.Panel panel1;
     }
 }

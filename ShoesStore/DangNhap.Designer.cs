@@ -34,7 +34,7 @@
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbUser = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.btn_DangNhap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTitle
@@ -99,19 +99,21 @@
             this.btnThoat.TabIndex = 23;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnLogin
+            // btn_DangNhap
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(376, 350);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(136, 49);
-            this.btnLogin.TabIndex = 22;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btn_DangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btn_DangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DangNhap.ForeColor = System.Drawing.Color.White;
+            this.btn_DangNhap.Location = new System.Drawing.Point(376, 350);
+            this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_DangNhap.Name = "btn_DangNhap";
+            this.btn_DangNhap.Size = new System.Drawing.Size(136, 49);
+            this.btn_DangNhap.TabIndex = 22;
+            this.btn_DangNhap.Text = "Đăng nhập";
+            this.btn_DangNhap.UseVisualStyleBackColor = false;
+            this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
             // 
             // DangNhap
             // 
@@ -124,10 +126,11 @@
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUser);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btn_DangNhap);
             this.Controls.Add(this.lbTitle);
             this.Name = "DangNhap";
             this.Text = "DangNhap";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,6 +144,6 @@
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.Label lbUser;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btn_DangNhap;
     }
 }

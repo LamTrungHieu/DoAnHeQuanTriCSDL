@@ -26,5 +26,10 @@ namespace ShoesStore
         {
 
         }
+
+        private void btn_Xuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
