@@ -37,7 +37,9 @@
             this.ThueVAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTienSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Chi_Tiet_Hoa_Don)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(433, 45);
+            this.label1.Location = new System.Drawing.Point(427, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 43);
             this.label1.TabIndex = 14;
@@ -66,11 +68,11 @@
             this.KhuyenMai,
             this.ThanhTienSanPham});
             this.dgv_Chi_Tiet_Hoa_Don.GridColor = System.Drawing.Color.White;
-            this.dgv_Chi_Tiet_Hoa_Don.Location = new System.Drawing.Point(12, 218);
+            this.dgv_Chi_Tiet_Hoa_Don.Location = new System.Drawing.Point(30, 138);
             this.dgv_Chi_Tiet_Hoa_Don.Name = "dgv_Chi_Tiet_Hoa_Don";
             this.dgv_Chi_Tiet_Hoa_Don.RowHeadersWidth = 62;
             this.dgv_Chi_Tiet_Hoa_Don.RowTemplate.Height = 28;
-            this.dgv_Chi_Tiet_Hoa_Don.Size = new System.Drawing.Size(1093, 288);
+            this.dgv_Chi_Tiet_Hoa_Don.Size = new System.Drawing.Size(1093, 428);
             this.dgv_Chi_Tiet_Hoa_Don.TabIndex = 18;
             // 
             // MaGiayTT
@@ -122,19 +124,29 @@
             this.ThanhTienSanPham.Name = "ThanhTienSanPham";
             this.ThanhTienSanPham.Width = 150;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dgv_Chi_Tiet_Hoa_Don);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1154, 592);
+            this.panel1.TabIndex = 19;
+            // 
             // ChiTietHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1152, 599);
-            this.Controls.Add(this.dgv_Chi_Tiet_Hoa_Don);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChiTietHoaDon";
             this.Text = "ChiTietHoaDon";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Chi_Tiet_Hoa_Don)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -149,5 +161,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ThueVAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn KhuyenMai;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTienSanPham;
+        private System.Windows.Forms.Panel panel1;
     }
 }

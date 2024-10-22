@@ -31,5 +31,15 @@ namespace ShoesStore
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Tim_Kiem_Giay_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

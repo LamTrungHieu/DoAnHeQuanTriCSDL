@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ShoesStore
 {
-    public partial class HoaDon : Form
+    public partial class UserControl1 : UserControl
     {
-        public HoaDon()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void HoaDon_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
