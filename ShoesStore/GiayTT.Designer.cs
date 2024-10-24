@@ -154,7 +154,11 @@
             this.MauSac,
             this.SizeGiay,
             this.QuaTangKem});
+<<<<<<< HEAD
             this.dgv_Giay_The_Thao.GridColor = System.Drawing.Color.White;
+=======
+            this.dgv_Giay_The_Thao.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+>>>>>>> dev
             this.dgv_Giay_The_Thao.Location = new System.Drawing.Point(213, 318);
             this.dgv_Giay_The_Thao.Name = "dgv_Giay_The_Thao";
             this.dgv_Giay_The_Thao.RowHeadersWidth = 62;

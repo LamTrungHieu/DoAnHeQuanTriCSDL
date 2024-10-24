@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+=======
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+>>>>>>> dev
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_NCC = new System.Windows.Forms.DataGridView();
             this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +65,17 @@
             // 
             this.dgv_NCC.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv_NCC.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+<<<<<<< HEAD
+=======
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_NCC.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+>>>>>>> dev
             this.dgv_NCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_NCC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNCC,
@@ -69,7 +84,11 @@
             this.DiaChi,
             this.SDT,
             this.TrangThaiHopTac});
+<<<<<<< HEAD
             this.dgv_NCC.GridColor = System.Drawing.Color.White;
+=======
+            this.dgv_NCC.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+>>>>>>> dev
             this.dgv_NCC.Location = new System.Drawing.Point(22, 256);
             this.dgv_NCC.Name = "dgv_NCC";
             this.dgv_NCC.RowHeadersWidth = 62;

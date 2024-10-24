@@ -71,7 +71,11 @@
             this.Sotienthanhtoan,
             this.phuongthucthanhtoan,
             this.Trangthaithanhtoan});
+<<<<<<< HEAD
             this.dgv_Hoa_Don.GridColor = System.Drawing.Color.White;
+=======
+            this.dgv_Hoa_Don.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+>>>>>>> dev
             this.dgv_Hoa_Don.Location = new System.Drawing.Point(33, 342);
             this.dgv_Hoa_Don.Name = "dgv_Hoa_Don";
             this.dgv_Hoa_Don.RowHeadersWidth = 62;
