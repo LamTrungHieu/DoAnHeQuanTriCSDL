@@ -10,7 +10,7 @@ namespace ShoesStore
 {
     internal class MyConnect
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-AJ47GCA\MAY1;Initial Catalog=QLYShoesStore;User ID=sa;Password=12345");
+        SqlConnection con = new SqlConnection(@"Data Source=AICHOIGENSHINIM\MAY1;Initial Catalog=QLYShoesStore;Integrated Security=True");
         public SqlConnection getConnection
         {
             get
@@ -18,7 +18,7 @@ namespace ShoesStore
                 return con;
             }
         }
-        SqlConnection conAdmin = new SqlConnection(@"Data Source=DESKTOP-AJ47GCA\MAY1;Initial Catalog=QLYShoesStore;User ID=sa;Password=12345");
+        SqlConnection conAdmin = new SqlConnection(@"Data Source=AICHOIGENSHINIM\MAY1;Initial Catalog=QLYShoesStore;Integrated Security=True");
         public SqlConnection getConnectionAdmin
         {
             get
