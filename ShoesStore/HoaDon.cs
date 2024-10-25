@@ -24,7 +24,6 @@ namespace ShoesStore
 
         private void HoaDon_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
