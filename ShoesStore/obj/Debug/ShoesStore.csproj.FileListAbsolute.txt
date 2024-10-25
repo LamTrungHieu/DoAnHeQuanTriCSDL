@@ -1,0 +1,47 @@
+<<<<<<< HEAD
+=======
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\bin\Debug\ShoesStore.exe.config
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\bin\Debug\ShoesStore.exe
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\bin\Debug\ShoesStore.pdb
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.csproj.AssemblyReference.cache
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.Properties.Resources.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.csproj.GenerateResource.cache
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.csproj.CoreCompileInputs.cache
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.exe
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.pdb
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.Baohanh.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.ChiTietHoaDon.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.ChiTietPhieuNhapKho.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.DangNhap.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.Form1.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.GiayTT.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.HienThiThongKe.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.HoaDon.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.KhachHang.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.NhaCungCap.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.NhanVien.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.PhieuNhapKho.resources
+D:\Năm 3\Hệ Quan Trị CSDL\ShoesStore\ShoesStore\obj\Debug\ShoesStore.PhuKien.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.csproj.AssemblyReference.cache
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.Baohanh.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.ChiTietHoaDon.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.ChiTietPhieuNhapKho.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.DangNhap.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.Form1.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.GiayTT.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.HienThiThongKe.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.HoaDon.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.KhachHang.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.NhaCungCap.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.NhanVien.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.PhieuNhapKho.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.PhuKien.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.Properties.Resources.resources
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.csproj.GenerateResource.cache
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.csproj.CoreCompileInputs.cache
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.exe
+E:\nam3\DBMS\DOAN\ShoesStore\obj\Debug\ShoesStore.pdb
+E:\nam3\DBMS\DOAN\ShoesStore\bin\Debug\ShoesStore.exe.config
+E:\nam3\DBMS\DOAN\ShoesStore\bin\Debug\ShoesStore.exe
+E:\nam3\DBMS\DOAN\ShoesStore\bin\Debug\ShoesStore.pdb
+>>>>>>> 23d0a936629ea0416586bcc645d77393256a27b4
