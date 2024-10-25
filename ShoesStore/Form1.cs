@@ -111,5 +111,11 @@ namespace ShoesStore
         {
 
         }
+
+        private void btn_ChiTietphieuNhap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ChiTietPhieuNhapKho());
+            label1.Text = btn_ChiTietphieuNhap.Text;
+        }
     }
 }
