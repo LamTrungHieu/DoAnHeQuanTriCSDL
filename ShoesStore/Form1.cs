@@ -56,7 +56,7 @@ namespace ShoesStore
         private void btn_GiayTT_Click(object sender, EventArgs e)
         {
             OpenChildForm(new GiayTT());
-            label1.Text = btn_GiayTT.Text;
+             label1.Text = btn_GiayTT.Text;
         }
 
         private void btn_NCC_Click(object sender, EventArgs e)
@@ -110,6 +110,12 @@ namespace ShoesStore
         private void pn_Body_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btn_ChiTietphieuNhap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ChiTietPhieuNhapKho());
+            label1.Text = btn_ChiTietphieuNhap.Text;
         }
     }
 }

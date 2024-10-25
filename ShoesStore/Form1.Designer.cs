@@ -43,6 +43,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pn_Body = new System.Windows.Forms.Panel();
+            this.btn_ChiTietphieuNhap = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.btn_ChiTietphieuNhap);
             this.panel1.Controls.Add(this.btn_Thongke);
             this.panel1.Controls.Add(this.btn_phukien);
             this.panel1.Controls.Add(this.btn_ChiTietHoaDon);
@@ -63,7 +65,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(-3, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 821);
+            this.panel1.Size = new System.Drawing.Size(249, 900);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -72,7 +74,7 @@
             this.btn_Thongke.BackColor = System.Drawing.Color.Maroon;
             this.btn_Thongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Thongke.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_Thongke.Location = new System.Drawing.Point(5, 746);
+            this.btn_Thongke.Location = new System.Drawing.Point(3, 806);
             this.btn_Thongke.Name = "btn_Thongke";
             this.btn_Thongke.Size = new System.Drawing.Size(241, 70);
             this.btn_Thongke.TabIndex = 4;
@@ -85,7 +87,7 @@
             this.btn_phukien.BackColor = System.Drawing.Color.Maroon;
             this.btn_phukien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_phukien.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_phukien.Location = new System.Drawing.Point(5, 680);
+            this.btn_phukien.Location = new System.Drawing.Point(5, 741);
             this.btn_phukien.Name = "btn_phukien";
             this.btn_phukien.Size = new System.Drawing.Size(241, 70);
             this.btn_phukien.TabIndex = 4;
@@ -98,7 +100,7 @@
             this.btn_ChiTietHoaDon.BackColor = System.Drawing.Color.Maroon;
             this.btn_ChiTietHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ChiTietHoaDon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_ChiTietHoaDon.Location = new System.Drawing.Point(5, 483);
+            this.btn_ChiTietHoaDon.Location = new System.Drawing.Point(5, 552);
             this.btn_ChiTietHoaDon.Name = "btn_ChiTietHoaDon";
             this.btn_ChiTietHoaDon.Size = new System.Drawing.Size(241, 70);
             this.btn_ChiTietHoaDon.TabIndex = 3;
@@ -124,7 +126,7 @@
             this.btn_baohanh.BackColor = System.Drawing.Color.Maroon;
             this.btn_baohanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_baohanh.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_baohanh.Location = new System.Drawing.Point(5, 615);
+            this.btn_baohanh.Location = new System.Drawing.Point(5, 678);
             this.btn_baohanh.Name = "btn_baohanh";
             this.btn_baohanh.Size = new System.Drawing.Size(241, 70);
             this.btn_baohanh.TabIndex = 4;
@@ -137,7 +139,7 @@
             this.btn_khachhang.BackColor = System.Drawing.Color.Maroon;
             this.btn_khachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_khachhang.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_khachhang.Location = new System.Drawing.Point(5, 548);
+            this.btn_khachhang.Location = new System.Drawing.Point(5, 617);
             this.btn_khachhang.Name = "btn_khachhang";
             this.btn_khachhang.Size = new System.Drawing.Size(241, 70);
             this.btn_khachhang.TabIndex = 4;
@@ -150,7 +152,7 @@
             this.btn_HoaDon.BackColor = System.Drawing.Color.Maroon;
             this.btn_HoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HoaDon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_HoaDon.Location = new System.Drawing.Point(5, 416);
+            this.btn_HoaDon.Location = new System.Drawing.Point(3, 485);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(241, 70);
             this.btn_HoaDon.TabIndex = 3;
@@ -235,9 +237,22 @@
             this.pn_Body.AutoSize = true;
             this.pn_Body.Location = new System.Drawing.Point(246, 93);
             this.pn_Body.Name = "pn_Body";
-            this.pn_Body.Size = new System.Drawing.Size(1241, 732);
+            this.pn_Body.Size = new System.Drawing.Size(1241, 790);
             this.pn_Body.TabIndex = 2;
             this.pn_Body.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_Body_Paint);
+            // 
+            // btn_ChiTietphieuNhap
+            // 
+            this.btn_ChiTietphieuNhap.BackColor = System.Drawing.Color.Maroon;
+            this.btn_ChiTietphieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ChiTietphieuNhap.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_ChiTietphieuNhap.Location = new System.Drawing.Point(5, 425);
+            this.btn_ChiTietphieuNhap.Name = "btn_ChiTietphieuNhap";
+            this.btn_ChiTietphieuNhap.Size = new System.Drawing.Size(241, 70);
+            this.btn_ChiTietphieuNhap.TabIndex = 5;
+            this.btn_ChiTietphieuNhap.Text = "Chi Tiết Phiếu Nhập Kho";
+            this.btn_ChiTietphieuNhap.UseVisualStyleBackColor = false;
+            this.btn_ChiTietphieuNhap.Click += new System.EventHandler(this.btn_ChiTietphieuNhap_Click);
             // 
             // Form1
             // 
@@ -245,7 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1488, 818);
+            this.ClientSize = new System.Drawing.Size(1488, 910);
             this.Controls.Add(this.pn_Body);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -278,6 +293,7 @@
         private System.Windows.Forms.Button btn_Thongke;
         private System.Windows.Forms.Button btn_phukien;
         private System.Windows.Forms.Panel pn_Body;
+        private System.Windows.Forms.Button btn_ChiTietphieuNhap;
     }
 }
 
