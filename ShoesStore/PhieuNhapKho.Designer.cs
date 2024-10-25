@@ -30,10 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_PhieuNhapKho = new System.Windows.Forms.DataGridView();
+            this.Manhapkho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaynhapkho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sotienthanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phuongthucthanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Trangthaithanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date_ngaynhap = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_Tim_nhapkho = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_HienThongTin = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -53,14 +61,6 @@
             this.txt_MaNK = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btn_HienThongTin = new System.Windows.Forms.Button();
-            this.Manhapkho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Manhanvien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaynhapkho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sotienthanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phuongthucthanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Trangthaithanhtoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PhieuNhapKho)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -73,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
             this.label1.Location = new System.Drawing.Point(408, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 43);
@@ -103,6 +103,55 @@
             this.dgv_PhieuNhapKho.Size = new System.Drawing.Size(1093, 389);
             this.dgv_PhieuNhapKho.TabIndex = 30;
             this.dgv_PhieuNhapKho.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Hoa_Don_CellContentClick);
+            // 
+            // Manhapkho
+            // 
+            this.Manhapkho.DataPropertyName = "MaNK";
+            this.Manhapkho.HeaderText = "Mã nhập kho";
+            this.Manhapkho.MinimumWidth = 8;
+            this.Manhapkho.Name = "Manhapkho";
+            // 
+            // MaNCC
+            // 
+            this.MaNCC.DataPropertyName = "MaNCC";
+            this.MaNCC.HeaderText = "Mã nhà cung cấp";
+            this.MaNCC.MinimumWidth = 8;
+            this.MaNCC.Name = "MaNCC";
+            // 
+            // Manhanvien
+            // 
+            this.Manhanvien.DataPropertyName = "MaNV";
+            this.Manhanvien.HeaderText = "Mã nhân viên";
+            this.Manhanvien.MinimumWidth = 8;
+            this.Manhanvien.Name = "Manhanvien";
+            // 
+            // Ngaynhapkho
+            // 
+            this.Ngaynhapkho.DataPropertyName = "NgayNhapKho";
+            this.Ngaynhapkho.HeaderText = "Ngày nhập kho";
+            this.Ngaynhapkho.MinimumWidth = 8;
+            this.Ngaynhapkho.Name = "Ngaynhapkho";
+            // 
+            // Sotienthanhtoan
+            // 
+            this.Sotienthanhtoan.DataPropertyName = "SoTienThanhToanNhapKho";
+            this.Sotienthanhtoan.HeaderText = "Số tiền thanh toán";
+            this.Sotienthanhtoan.MinimumWidth = 8;
+            this.Sotienthanhtoan.Name = "Sotienthanhtoan";
+            // 
+            // phuongthucthanhtoan
+            // 
+            this.phuongthucthanhtoan.DataPropertyName = "PhuongThucThanhToan";
+            this.phuongthucthanhtoan.HeaderText = "Phương thức thanh toán";
+            this.phuongthucthanhtoan.MinimumWidth = 8;
+            this.phuongthucthanhtoan.Name = "phuongthucthanhtoan";
+            // 
+            // Trangthaithanhtoan
+            // 
+            this.Trangthaithanhtoan.DataPropertyName = "TrangThaiThanhToan";
+            this.Trangthaithanhtoan.HeaderText = "Trạng thái thanh toán";
+            this.Trangthaithanhtoan.MinimumWidth = 8;
+            this.Trangthaithanhtoan.Name = "Trangthaithanhtoan";
             // 
             // date_ngaynhap
             // 
@@ -147,6 +196,18 @@
             this.panel1.Size = new System.Drawing.Size(1144, 652);
             this.panel1.TabIndex = 31;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btn_HienThongTin
+            // 
+            this.btn_HienThongTin.BackColor = System.Drawing.Color.Brown;
+            this.btn_HienThongTin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_HienThongTin.Location = new System.Drawing.Point(979, 76);
+            this.btn_HienThongTin.Name = "btn_HienThongTin";
+            this.btn_HienThongTin.Size = new System.Drawing.Size(119, 61);
+            this.btn_HienThongTin.TabIndex = 31;
+            this.btn_HienThongTin.Text = "Hiện Thông Tin";
+            this.btn_HienThongTin.UseVisualStyleBackColor = false;
+            this.btn_HienThongTin.Click += new System.EventHandler(this.btn_HienThongTin_Click);
             // 
             // tabControl1
             // 
@@ -341,74 +402,13 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
             this.label7.Location = new System.Drawing.Point(296, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(527, 43);
             this.label7.TabIndex = 35;
             this.label7.Text = "Chỉnh Sửa Thông Tin Phiếu Nhập Kho";
             this.label7.UseCompatibleTextRendering = true;
-            // 
-            // btn_HienThongTin
-            // 
-            this.btn_HienThongTin.BackColor = System.Drawing.Color.Brown;
-            this.btn_HienThongTin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_HienThongTin.Location = new System.Drawing.Point(979, 76);
-            this.btn_HienThongTin.Name = "btn_HienThongTin";
-            this.btn_HienThongTin.Size = new System.Drawing.Size(119, 61);
-            this.btn_HienThongTin.TabIndex = 31;
-            this.btn_HienThongTin.Text = "Hiện Thông Tin";
-            this.btn_HienThongTin.UseVisualStyleBackColor = false;
-            this.btn_HienThongTin.Click += new System.EventHandler(this.btn_HienThongTin_Click);
-            // 
-            // Manhapkho
-            // 
-            this.Manhapkho.DataPropertyName = "MaNK";
-            this.Manhapkho.HeaderText = "Mã nhập kho";
-            this.Manhapkho.MinimumWidth = 8;
-            this.Manhapkho.Name = "Manhapkho";
-            // 
-            // MaNCC
-            // 
-            this.MaNCC.DataPropertyName = "MaNCC";
-            this.MaNCC.HeaderText = "Mã nhà cung cấp";
-            this.MaNCC.MinimumWidth = 8;
-            this.MaNCC.Name = "MaNCC";
-            // 
-            // Manhanvien
-            // 
-            this.Manhanvien.DataPropertyName = "MaNV";
-            this.Manhanvien.HeaderText = "Mã nhân viên";
-            this.Manhanvien.MinimumWidth = 8;
-            this.Manhanvien.Name = "Manhanvien";
-            // 
-            // Ngaynhapkho
-            // 
-            this.Ngaynhapkho.DataPropertyName = "NgayNhapKho";
-            this.Ngaynhapkho.HeaderText = "Ngày nhập kho";
-            this.Ngaynhapkho.MinimumWidth = 8;
-            this.Ngaynhapkho.Name = "Ngaynhapkho";
-            // 
-            // Sotienthanhtoan
-            // 
-            this.Sotienthanhtoan.DataPropertyName = "SoTienThanhToanNhapKho";
-            this.Sotienthanhtoan.HeaderText = "Số tiền thanh toán";
-            this.Sotienthanhtoan.MinimumWidth = 8;
-            this.Sotienthanhtoan.Name = "Sotienthanhtoan";
-            // 
-            // phuongthucthanhtoan
-            // 
-            this.phuongthucthanhtoan.DataPropertyName = "PhuongThucThanhToan";
-            this.phuongthucthanhtoan.HeaderText = "Phương thức thanh toán";
-            this.phuongthucthanhtoan.MinimumWidth = 8;
-            this.phuongthucthanhtoan.Name = "phuongthucthanhtoan";
-            // 
-            // Trangthaithanhtoan
-            // 
-            this.Trangthaithanhtoan.DataPropertyName = "TrangThaiThanhToan";
-            this.Trangthaithanhtoan.HeaderText = "Trạng thái thanh toán";
-            this.Trangthaithanhtoan.MinimumWidth = 8;
-            this.Trangthaithanhtoan.Name = "Trangthaithanhtoan";
             // 
             // PhieuNhapKho
             // 

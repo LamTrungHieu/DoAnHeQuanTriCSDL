@@ -32,10 +32,18 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_HienThongTin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_Chi_Tiet_Hoa_Don = new System.Windows.Forms.DataGridView();
+            this.MaGiayTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaBanTungSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThueVAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTienSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -54,19 +62,11 @@
             this.txt_MaGiayTT = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.MaGiayTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GiaBanTungSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThueVAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTienSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_HienThongTin = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Chi_Tiet_Hoa_Don)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -92,35 +92,6 @@
             this.tabPage1.Text = "Infor ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.btn_Xoa);
-            this.tabPage2.Controls.Add(this.btn_Sua);
-            this.tabPage2.Controls.Add(this.btn_Them);
-            this.tabPage2.Controls.Add(this.txt_GiabanTungSP);
-            this.tabPage2.Controls.Add(this.txt_KhuyenMai);
-            this.tabPage2.Controls.Add(this.txt_ThueVAT);
-            this.tabPage2.Controls.Add(this.txt_ThanhTienTungSP);
-            this.tabPage2.Controls.Add(this.txt_SoluongSP);
-            this.tabPage2.Controls.Add(this.txt_MaHD);
-            this.tabPage2.Controls.Add(this.txt_MaGiayTT);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1189, 599);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Options";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btn_HienThongTin);
@@ -132,12 +103,24 @@
             this.panel1.Size = new System.Drawing.Size(1118, 530);
             this.panel1.TabIndex = 20;
             // 
+            // btn_HienThongTin
+            // 
+            this.btn_HienThongTin.BackColor = System.Drawing.Color.IndianRed;
+            this.btn_HienThongTin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_HienThongTin.Location = new System.Drawing.Point(896, 94);
+            this.btn_HienThongTin.Name = "btn_HienThongTin";
+            this.btn_HienThongTin.Size = new System.Drawing.Size(145, 56);
+            this.btn_HienThongTin.TabIndex = 19;
+            this.btn_HienThongTin.Text = "Hiện Thông Tin";
+            this.btn_HienThongTin.UseVisualStyleBackColor = false;
+            this.btn_HienThongTin.Click += new System.EventHandler(this.btn_HienThongTin_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label1.ForeColor = System.Drawing.Color.OrangeRed;
             this.label1.Location = new System.Drawing.Point(395, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 43);
@@ -170,7 +153,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -183,6 +166,84 @@
             this.dgv_Chi_Tiet_Hoa_Don.Size = new System.Drawing.Size(1070, 357);
             this.dgv_Chi_Tiet_Hoa_Don.TabIndex = 18;
             this.dgv_Chi_Tiet_Hoa_Don.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Chi_Tiet_Hoa_Don_CellContentClick);
+            // 
+            // MaGiayTT
+            // 
+            this.MaGiayTT.DataPropertyName = "MaGiayTT";
+            this.MaGiayTT.HeaderText = "Mã Giày TT";
+            this.MaGiayTT.MinimumWidth = 8;
+            this.MaGiayTT.Name = "MaGiayTT";
+            // 
+            // MaHoaDon
+            // 
+            this.MaHoaDon.DataPropertyName = "MaHD";
+            this.MaHoaDon.HeaderText = "Mã hoá đơn";
+            this.MaHoaDon.MinimumWidth = 8;
+            this.MaHoaDon.Name = "MaHoaDon";
+            // 
+            // SoLuongSanPham
+            // 
+            this.SoLuongSanPham.DataPropertyName = "SoLuongSP";
+            this.SoLuongSanPham.HeaderText = "Số lượng sản phẩm";
+            this.SoLuongSanPham.MinimumWidth = 8;
+            this.SoLuongSanPham.Name = "SoLuongSanPham";
+            // 
+            // GiaBanTungSanPham
+            // 
+            this.GiaBanTungSanPham.DataPropertyName = "GiaBanTungSP";
+            this.GiaBanTungSanPham.HeaderText = "Giá bán từng sản phẩm";
+            this.GiaBanTungSanPham.MinimumWidth = 8;
+            this.GiaBanTungSanPham.Name = "GiaBanTungSanPham";
+            // 
+            // ThueVAT
+            // 
+            this.ThueVAT.DataPropertyName = "ThueVAT";
+            this.ThueVAT.HeaderText = "Thuế VAT";
+            this.ThueVAT.MinimumWidth = 8;
+            this.ThueVAT.Name = "ThueVAT";
+            // 
+            // KhuyenMai
+            // 
+            this.KhuyenMai.DataPropertyName = "KhuyenMai";
+            this.KhuyenMai.HeaderText = "Khuyến Mãi";
+            this.KhuyenMai.MinimumWidth = 8;
+            this.KhuyenMai.Name = "KhuyenMai";
+            // 
+            // ThanhTienSanPham
+            // 
+            this.ThanhTienSanPham.DataPropertyName = "ThanhTienTungSP";
+            this.ThanhTienSanPham.HeaderText = "Thành tiền từng sản phẩm";
+            this.ThanhTienSanPham.MinimumWidth = 8;
+            this.ThanhTienSanPham.Name = "ThanhTienSanPham";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.btn_Xoa);
+            this.tabPage2.Controls.Add(this.btn_Sua);
+            this.tabPage2.Controls.Add(this.btn_Them);
+            this.tabPage2.Controls.Add(this.txt_GiabanTungSP);
+            this.tabPage2.Controls.Add(this.txt_KhuyenMai);
+            this.tabPage2.Controls.Add(this.txt_ThueVAT);
+            this.tabPage2.Controls.Add(this.txt_ThanhTienTungSP);
+            this.tabPage2.Controls.Add(this.txt_SoluongSP);
+            this.tabPage2.Controls.Add(this.txt_MaHD);
+            this.tabPage2.Controls.Add(this.txt_MaGiayTT);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1189, 599);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Options";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // label14
             // 
@@ -344,74 +405,13 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
             this.label7.Location = new System.Drawing.Point(352, 3);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(397, 43);
             this.label7.TabIndex = 35;
             this.label7.Text = "Chỉnh Sửa Chi Tiết Hoá Đơn";
             this.label7.UseCompatibleTextRendering = true;
-            // 
-            // MaGiayTT
-            // 
-            this.MaGiayTT.DataPropertyName = "MaGiayTT";
-            this.MaGiayTT.HeaderText = "Mã Giày TT";
-            this.MaGiayTT.MinimumWidth = 8;
-            this.MaGiayTT.Name = "MaGiayTT";
-            // 
-            // MaHoaDon
-            // 
-            this.MaHoaDon.DataPropertyName = "MaHD";
-            this.MaHoaDon.HeaderText = "Mã hoá đơn";
-            this.MaHoaDon.MinimumWidth = 8;
-            this.MaHoaDon.Name = "MaHoaDon";
-            // 
-            // SoLuongSanPham
-            // 
-            this.SoLuongSanPham.DataPropertyName = "SoLuongSP";
-            this.SoLuongSanPham.HeaderText = "Số lượng sản phẩm";
-            this.SoLuongSanPham.MinimumWidth = 8;
-            this.SoLuongSanPham.Name = "SoLuongSanPham";
-            // 
-            // GiaBanTungSanPham
-            // 
-            this.GiaBanTungSanPham.DataPropertyName = "GiaBanTungSP";
-            this.GiaBanTungSanPham.HeaderText = "Giá bán từng sản phẩm";
-            this.GiaBanTungSanPham.MinimumWidth = 8;
-            this.GiaBanTungSanPham.Name = "GiaBanTungSanPham";
-            // 
-            // ThueVAT
-            // 
-            this.ThueVAT.DataPropertyName = "ThueVAT";
-            this.ThueVAT.HeaderText = "Thuế VAT";
-            this.ThueVAT.MinimumWidth = 8;
-            this.ThueVAT.Name = "ThueVAT";
-            // 
-            // KhuyenMai
-            // 
-            this.KhuyenMai.DataPropertyName = "KhuyenMai";
-            this.KhuyenMai.HeaderText = "Khuyến Mãi";
-            this.KhuyenMai.MinimumWidth = 8;
-            this.KhuyenMai.Name = "KhuyenMai";
-            // 
-            // ThanhTienSanPham
-            // 
-            this.ThanhTienSanPham.DataPropertyName = "ThanhTienTungSP";
-            this.ThanhTienSanPham.HeaderText = "Thành tiền từng sản phẩm";
-            this.ThanhTienSanPham.MinimumWidth = 8;
-            this.ThanhTienSanPham.Name = "ThanhTienSanPham";
-            // 
-            // btn_HienThongTin
-            // 
-            this.btn_HienThongTin.BackColor = System.Drawing.Color.IndianRed;
-            this.btn_HienThongTin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_HienThongTin.Location = new System.Drawing.Point(896, 94);
-            this.btn_HienThongTin.Name = "btn_HienThongTin";
-            this.btn_HienThongTin.Size = new System.Drawing.Size(145, 56);
-            this.btn_HienThongTin.TabIndex = 19;
-            this.btn_HienThongTin.Text = "Hiện Thông Tin";
-            this.btn_HienThongTin.UseVisualStyleBackColor = false;
-            this.btn_HienThongTin.Click += new System.EventHandler(this.btn_HienThongTin_Click);
             // 
             // ChiTietHoaDon
             // 
@@ -423,13 +423,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChiTietHoaDon";
             this.Text = "ChiTietHoaDon";
+            this.Load += new System.EventHandler(this.ChiTietHoaDon_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Chi_Tiet_Hoa_Don)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }

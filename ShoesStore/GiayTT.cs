@@ -17,13 +17,13 @@ namespace ShoesStore
         private void Reset()
         {
             txt_MaGiayTT.ResetText();
-            txt_CSSizeGiay.ResetText();   
+            txt_SizeGiay.ResetText();   
             txt_QuatangKem.ResetText();
             txt_TenGiayTT.ResetText();
-            txt_TimMauSac.ResetText();
-            txt_CSKhoiluong.ResetText();
+            txt_MauSac.ResetText();
+            txt_Khoiluong.ResetText();
             txt_TenHangGiay.ResetText();
-            txt_hanBaoHanh.ResetText();
+            txt_HanBaoHanh.ResetText();
             txt_Soluong.ResetText();
             txt_Chatlieugiay.ResetText();
             txt_GiaGiay.ResetText();
@@ -50,17 +50,17 @@ namespace ShoesStore
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txt_MaGiayTT.Text = dgv_Giay_The_Thao.CurrentRow.Cells[0].Value.ToString();
-            txt_TenGiayTT.Text = dgv_Giay_The_Thao.CurrentRow.Cells[1].Value.ToString();
-            txt_TenHangGiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[2].Value.ToString();
-            txt_CSKhoiluong.Text = dgv_Giay_The_Thao.CurrentRow.Cells[3].Value.ToString();
-            txt_hanBaoHanh.Text = dgv_Giay_The_Thao.CurrentRow.Cells[4].Value.ToString();
-            txt_Soluong.Text = dgv_Giay_The_Thao.CurrentRow.Cells[5].Value.ToString();
-            txt_CSSizeGiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[6].Value.ToString();
-            txt_MauSac.Text = dgv_Giay_The_Thao.CurrentRow.Cells[7].Value.ToString();
-            txt_Chatlieugiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[8].Value.ToString();
-            txt_GiaGiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[9].Value.ToString();
-            txt_QuatangKem.Text = dgv_Giay_The_Thao.CurrentRow.Cells[10].Value.ToString();
+                txt_MaGiayTT.Text = dgv_Giay_The_Thao.CurrentRow.Cells[0].Value.ToString();
+                txt_TenGiayTT.Text = dgv_Giay_The_Thao.CurrentRow.Cells[1].Value.ToString();
+                txt_TenHangGiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[2].Value.ToString();
+                txt_SizeGiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[3].Value.ToString();
+                txt_MauSac.Text = dgv_Giay_The_Thao.CurrentRow.Cells[4].Value.ToString();
+                txt_Soluong.Text = dgv_Giay_The_Thao.CurrentRow.Cells[5].Value.ToString();
+                txt_GiaGiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[6].Value.ToString();
+                txt_HanBaoHanh.Text = dgv_Giay_The_Thao.CurrentRow.Cells[7].Value.ToString();
+                txt_Chatlieugiay.Text = dgv_Giay_The_Thao.CurrentRow.Cells[8].Value.ToString();
+                txt_QuatangKem.Text = dgv_Giay_The_Thao.CurrentRow.Cells[9].Value.ToString();
+                txt_Khoiluong.Text = dgv_Giay_The_Thao.CurrentRow.Cells[10].Value.ToString();
             
         }
 
@@ -81,7 +81,7 @@ namespace ShoesStore
                 SqlCommand cmd = new SqlCommand("SELECT * FROM fn_TimKiemGiayTheThao(@TenGTT,@KhoiLuong, @TenHangGTT, @MauSac, @SizeGiay)", conn);
                 cmd.Parameters.AddWithValue("@TenGTT", txt_TimTenGiay.Text);
                 cmd.Parameters.AddWithValue("@KhoiLuong", txt_TimKhoiLuong.Text);
-                cmd.Parameters.AddWithValue("@TenHangGTT", txt_TimTenHang);
+                cmd.Parameters.AddWithValue("@TenHangGTT", txt_TimTenHang.Text);
                 cmd.Parameters.AddWithValue("@MauSac", txt_TimMauSac.Text);
                 cmd.Parameters.AddWithValue("@SizeGiay", txt_TimSize.Text);
                 DataTable dt = new DataTable();
@@ -119,7 +119,7 @@ namespace ShoesStore
             myconn.openConnection();
             try
             {
-                SqlCommand cmd = new SqlCommand($"EXEC dbo.sp_ReviseGiayTT '{txt_MaGiayTT.Text}', N'{txt_TenGiayTT.Text}', N'{txt_TenHangGiay.Text}', {txt_CSSizeGiay.Text}, {txt_MauSac.Text}, {txt_Soluong.Text}, N'{txt_GiaGiay.Text}', {txt_hanBaoHanh.Text}, N'{txt_Chatlieugiay.Text}', N'{txt_QuatangKem.Text}', 'INSERT' ", myconn.getConnection);
+                SqlCommand cmd = new SqlCommand($"EXEC dbo.sp_ReviseGiayTT '{txt_MaGiayTT.Text}', N'{txt_TenGiayTT.Text}', N'{txt_TenHangGiay.Text}', {txt_SizeGiay.Text}, N'{txt_MauSac.Text}', {txt_Soluong.Text}, {txt_GiaGiay.Text}, {txt_HanBaoHanh.Text}, N'{txt_Chatlieugiay.Text}', N'{txt_QuatangKem.Text}',N'{txt_Khoiluong.Text}',  'INSERT' ", myconn.getConnection);
 
                 MessageBox.Show("Thêm Giày thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadData();
@@ -135,10 +135,10 @@ namespace ShoesStore
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            myconn.closeConnection();
+            myconn.openConnection();
             try
             {
-                SqlCommand cmd = new SqlCommand($"EXEC dbo.sp_ReviseGiayTT '{txt_MaGiayTT.Text}', N'{txt_TenGiayTT.Text}', N'{txt_TenHangGiay.Text}', {txt_CSSizeGiay.Text}, {txt_MauSac.Text}, {txt_Soluong.Text}, N'{txt_GiaGiay.Text}', {txt_hanBaoHanh.Text} , N' {txt_Chatlieugiay.Text}', N'{txt_QuatangKem.Text}', 'UPDATE'", myconn.getConnection);
+                SqlCommand cmd = new SqlCommand($"EXEC dbo.sp_ReviseGiayTT '{txt_MaGiayTT.Text}', N'{txt_TenGiayTT.Text}', N'{txt_TenHangGiay.Text}', {txt_SizeGiay.Text}, N'{txt_MauSac.Text}', {txt_Soluong.Text}, {txt_GiaGiay.Text}, {txt_HanBaoHanh.Text}, N'{txt_Chatlieugiay.Text}', N'{txt_QuatangKem.Text}',N'{txt_Khoiluong.Text}', 'UPDATE' ", myconn.getConnection);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Sửa Giày thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadData();
@@ -157,7 +157,7 @@ namespace ShoesStore
             myconn.openConnection();
             try
             {
-                SqlCommand cmd = new SqlCommand($"EXEC dbo.sp_ReviseGiayTT '{txt_MaGiayTT.Text}', N'{txt_TenGiayTT.Text}', N'{txt_TenHangGiay.Text}', {txt_CSSizeGiay.Text}, {txt_MauSac.Text}, {txt_Soluong.Text}, N'{txt_GiaGiay.Text}', {txt_hanBaoHanh.Text}, N'{txt_Chatlieugiay.Text}', N'{txt_QuatangKem.Text}',  'DELETE' ", myconn.getConnection);
+                SqlCommand cmd = new SqlCommand($"EXEC dbo.sp_ReviseGiayTT '{txt_MaGiayTT.Text}', N'{txt_TenGiayTT.Text}', N'{txt_TenHangGiay.Text}', {txt_SizeGiay.Text}, N'{txt_MauSac.Text}', {txt_Soluong.Text}, {txt_GiaGiay.Text}, {txt_HanBaoHanh.Text}, N'{txt_Chatlieugiay.Text}', N'{txt_QuatangKem.Text}',N'{txt_Khoiluong.Text}',  'DELETE' ", myconn.getConnection);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Xóa Giày thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadData();

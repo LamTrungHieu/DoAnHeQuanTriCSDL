@@ -150,5 +150,10 @@ namespace ShoesStore
             txt_KhuyenMai.Text = dgv_Chi_Tiet_Hoa_Don.CurrentRow.Cells[5].Value.ToString();
             txt_ThanhTienTungSP.Text = dgv_Chi_Tiet_Hoa_Don.CurrentRow.Cells[6].Value.ToString();
     }
+
+        private void ChiTietHoaDon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
