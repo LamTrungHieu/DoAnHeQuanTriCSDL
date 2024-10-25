@@ -71,10 +71,10 @@ namespace ShoesStore
             txt_MaGiayTT.ResetText();
             txt_MaHD.ResetText();
             txt_SoluongSP.ResetText();
-            txt_ThanhTienTungSP.ResetText();
+            txt_GiabanTungSP.ResetText();
             txt_KhuyenMai.ResetText();
             txt_ThueVAT.ResetText();
-            txt_GiabanTungSP.ResetText();
+            txt_ThanhTienTungSP.ResetText();
         }
 
         private void btn_Them_Click(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace ShoesStore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhaCungCap());
+            Application.Run(new Form1());
         }
     }
 }

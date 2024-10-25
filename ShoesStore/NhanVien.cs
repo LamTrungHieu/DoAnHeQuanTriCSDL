@@ -197,15 +197,7 @@ namespace ShoesStore
             txt_EmailNV.Text = dgv_NhanVien.CurrentRow.Cells[3].Value.ToString();
             txt_PasswordNV.Text = dgv_NhanVien.CurrentRow.Cells[4].Value.ToString();
             txt_TrangThaiTaiKhoanNV.Text = dgv_NhanVien.CurrentRow.Cells[5].Value.ToString();
-            int isAdmin = Convert.ToInt32(dgv_NhanVien.CurrentRow.Cells[6].Value);
-            if (isAdmin == 1)
-            {
-                radiobtn_Admin.Checked = true;
-            }
-            else
-            {
-                radiobtn_Admin.Checked = false;
-            }
+            
 
         }
 

@@ -53,10 +53,10 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
-            this.txt_GiabanTungSP = new System.Windows.Forms.TextBox();
+            this.txt_ThanhTienTungSP = new System.Windows.Forms.TextBox();
             this.txt_KhuyenMai = new System.Windows.Forms.TextBox();
             this.txt_ThueVAT = new System.Windows.Forms.TextBox();
-            this.txt_ThanhTienTungSP = new System.Windows.Forms.TextBox();
+            this.txt_GiabanTungSP = new System.Windows.Forms.TextBox();
             this.txt_SoluongSP = new System.Windows.Forms.TextBox();
             this.txt_MaHD = new System.Windows.Forms.TextBox();
             this.txt_MaGiayTT = new System.Windows.Forms.TextBox();
@@ -153,7 +153,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -227,10 +227,10 @@
             this.tabPage2.Controls.Add(this.btn_Xoa);
             this.tabPage2.Controls.Add(this.btn_Sua);
             this.tabPage2.Controls.Add(this.btn_Them);
-            this.tabPage2.Controls.Add(this.txt_GiabanTungSP);
+            this.tabPage2.Controls.Add(this.txt_ThanhTienTungSP);
             this.tabPage2.Controls.Add(this.txt_KhuyenMai);
             this.tabPage2.Controls.Add(this.txt_ThueVAT);
-            this.tabPage2.Controls.Add(this.txt_ThanhTienTungSP);
+            this.tabPage2.Controls.Add(this.txt_GiabanTungSP);
             this.tabPage2.Controls.Add(this.txt_SoluongSP);
             this.tabPage2.Controls.Add(this.txt_MaHD);
             this.tabPage2.Controls.Add(this.txt_MaGiayTT);
@@ -341,12 +341,12 @@
             this.btn_Them.UseVisualStyleBackColor = false;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // txt_GiabanTungSP
+            // txt_ThanhTienTungSP
             // 
-            this.txt_GiabanTungSP.Location = new System.Drawing.Point(475, 408);
-            this.txt_GiabanTungSP.Name = "txt_GiabanTungSP";
-            this.txt_GiabanTungSP.Size = new System.Drawing.Size(395, 26);
-            this.txt_GiabanTungSP.TabIndex = 43;
+            this.txt_ThanhTienTungSP.Location = new System.Drawing.Point(475, 408);
+            this.txt_ThanhTienTungSP.Name = "txt_ThanhTienTungSP";
+            this.txt_ThanhTienTungSP.Size = new System.Drawing.Size(395, 26);
+            this.txt_ThanhTienTungSP.TabIndex = 43;
             // 
             // txt_KhuyenMai
             // 
@@ -362,12 +362,12 @@
             this.txt_ThueVAT.Size = new System.Drawing.Size(395, 26);
             this.txt_ThueVAT.TabIndex = 41;
             // 
-            // txt_ThanhTienTungSP
+            // txt_GiabanTungSP
             // 
-            this.txt_ThanhTienTungSP.Location = new System.Drawing.Point(475, 253);
-            this.txt_ThanhTienTungSP.Name = "txt_ThanhTienTungSP";
-            this.txt_ThanhTienTungSP.Size = new System.Drawing.Size(395, 26);
-            this.txt_ThanhTienTungSP.TabIndex = 40;
+            this.txt_GiabanTungSP.Location = new System.Drawing.Point(475, 253);
+            this.txt_GiabanTungSP.Name = "txt_GiabanTungSP";
+            this.txt_GiabanTungSP.Size = new System.Drawing.Size(395, 26);
+            this.txt_GiabanTungSP.TabIndex = 40;
             // 
             // txt_SoluongSP
             // 
@@ -452,10 +452,10 @@
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Sua;
         private System.Windows.Forms.Button btn_Them;
-        private System.Windows.Forms.TextBox txt_GiabanTungSP;
+        private System.Windows.Forms.TextBox txt_ThanhTienTungSP;
         private System.Windows.Forms.TextBox txt_KhuyenMai;
         private System.Windows.Forms.TextBox txt_ThueVAT;
-        private System.Windows.Forms.TextBox txt_ThanhTienTungSP;
+        private System.Windows.Forms.TextBox txt_GiabanTungSP;
         private System.Windows.Forms.TextBox txt_SoluongSP;
         private System.Windows.Forms.TextBox txt_MaHD;
         private System.Windows.Forms.TextBox txt_MaGiayTT;
